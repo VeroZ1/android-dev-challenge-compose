@@ -63,6 +63,6 @@ fun PuppyListItem(puppy: Puppy, onClick: (position: Int, puppy: Puppy) -> Unit) 
 fun PreviewPuppyListItem() {
     val puppy = DemoDataProvider.Edison
     MyTheme {
-        PuppyListItem(puppy = puppy) { position, puppy -> }
+        PuppyListItem(puppy = puppy) { _, _ -> }
     }
 }
