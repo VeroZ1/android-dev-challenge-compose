@@ -43,14 +43,16 @@ class MainActivity : AppCompatActivity() {
         setContent {
             MyTheme {
                 Surface(color = MaterialTheme.colors.background) {
-                    Scaffold(topBar = {
-                        TopAppBar(
-                            title = {
-                                Text(text = stringResource(id = R.string.app_name))
-                            },
-                            backgroundColor = Color.Transparent, elevation = 0.dp
-                        )
-                    }) {
+                    Scaffold(
+                        topBar = {
+                            TopAppBar(
+                                title = {
+                                    Text(text = stringResource(id = R.string.app_name))
+                                },
+                                backgroundColor = Color.Transparent,
+                                elevation = 0.dp
+                            )
+                        }) {
                         Column(modifier = Modifier.padding(8.dp)) {
                             val puppies = remember { DemoDataProvider.puppyList }
                             PuppyList(puppies, onClick = { position, puppy ->

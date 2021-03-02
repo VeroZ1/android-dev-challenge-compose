@@ -44,7 +44,7 @@ class DetailActivity : AppCompatActivity() {
 
 @Composable
 fun Greeting(puppy: Puppy) {
-    PuppyListItem(puppy =puppy, onClick = { _, _ ->  })
+    PuppyListItem(puppy = puppy, onClick = { _, _ -> })
 }
 
 @Preview(showBackground = true)
